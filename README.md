@@ -13,10 +13,10 @@ Récits utilisateur (User stories) :
 
 En tant que visiteur du site je veux pouvoir :
 - 1/ Trouvez des recettes via leurs :
- - nom
- - catégorie
- - ingrédient principale
- - pays d'origine
+  - 1a/ nom
+  - 1b/ catégorie
+  - 1c/ ingrédient principale
+  - 1d/ pays d'origine
 - 2/ Affichez le détails d'une recette => instruction / ingrédient&mesure / vidéo (si existante)
 - 3/ Affichez une recette au hasard (son détails)
 - 4/ Lister les catégorie de recettes
