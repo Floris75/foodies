@@ -1,0 +1,64 @@
+.cards-recipe{
+    
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 25%;
+    margin: 20px;
+    box-shadow: 4px 6px 15px -2px rgba(0,0,0,0.73);
+    -webkit-box-shadow: 4px 6px 15px -2px rgba(0,0,0,0.73);
+    -moz-box-shadow: 4px 6px 15px -2px rgba(0,0,0,0.73);
+    
+   
+    
+}
+
+.recipe-image{
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+   
+}
+
+h4{
+    color: #026269;
+    margin: 15px;
+    
+
+}
+.icones {
+    display: flex;
+    justify-content: center;
+}
+.icone {
+    width: 7%;
+    cursor: pointer;
+}
+
+p{
+    font-size: 10px;
+    margin: 20px;
+}
+
+button{
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #026269;
+    color: white;
+    padding: 12px;
+    width:60%;
+    font-size: 14px;
+    border: none;
+    box-shadow: 4px 6px 15px -2px rgba(0,0,0,0.73);
+    -webkit-box-shadow: 4px 6px 15px -2px rgba(0,0,0,0.73);
+    -moz-box-shadow: 4px 6px 15px -2px rgba(0,0,0,0.73);
+   
+}
+
+button:hover{
+    background-color: black;
+}
+

@@ -1,0 +1,11 @@
+ol li{
+    margin: 20px;
+    color :rgb(125, 125, 125)
+}
+
+.illustration{
+    display: flex;
+}
+.illustration img {
+    width: 40%;
+}
