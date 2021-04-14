@@ -14,31 +14,31 @@ class Footer extends React.Component {
                 
                 <div className="col">
                   <h4>Ingrédients</h4>
-                  <h1 className="list-unstyled">
+                  <ul className="list-unstyled">
                     <li>Pates</li>
                     <li>Riz</li>
                     <li>Viande</li>
                     <li></li>
-                  </h1>
+                  </ul>
                 </div>
               
                 <div className="col">
                   <h4>Cuisine du monde</h4>
-                  <ui className="list-unstyled">
+                  <ul className="list-unstyled">
                     <li>France</li>
                     <li>Algérie</li>
                     <li>Maroc</li>
                     <li>Greece</li>
-                  </ui>
+                  </ul>
                 </div>
                 
                 <div className="col">
                   <h4>Foodies</h4>
-                  <ui className="list-unstyled">
+                  <ul className="list-unstyled">
                     <li>About us</li>
                     <li>Contact us</li>
                     <li>History</li>
-                  </ui>
+                  </ul>
                 </div>
               </div>
               <hr />
