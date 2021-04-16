@@ -1,7 +1,6 @@
 .cards-recipe{
     
     display: flex;
-    flex-shrink: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -15,6 +14,7 @@
    
     
 }
+
 
 .recipe-image{
     object-fit: cover;
@@ -60,5 +60,10 @@ button{
 
 button:hover{
     background-color: black;
+}
+
+.randomContainer{
+    display: flex;
+    flex-wrap: wrap;
 }
 

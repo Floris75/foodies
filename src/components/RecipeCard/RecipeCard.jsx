@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 import React from 'react';
 import '../RecipeCard/recipecard.css';
 import AddButton from '../Buttons/AddButton'
@@ -13,12 +14,12 @@ class RecipeCard extends React.Component{
             
             <div className="cards-recipe">
                 {/* this.props.recipeImage = strMealsThumb */}
-                <img className="recipe-image" src={this.props.recipeImage} alt="riz"/>
+                <img className="recipe-image" src={this.props.recipeImage} alt=""/>
                 {/* this.props.title = strMeal */}
                 <h4>{this.props.title}</h4>
                 {/* bouton à revoir pour afficher le bon bouton selon s'il a ajouté ou pas à ses favoris */}
                 <AddButton/> 
-                <button>Lire la recette</button>
+                <button onClick=''>Lire la recette </button>
             </div>
         )
     }
