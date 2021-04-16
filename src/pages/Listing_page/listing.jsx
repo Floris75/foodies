@@ -97,6 +97,7 @@ class Listing extends React.Component {
                         ?
                         <div className="cardContainer"> 
                             <h2>Recherche par ingrédient principal</h2>
+                            <br/>
                             {this.state.responses.map((meal, index) =>
                                 <RecipeCard key={index} idRecipe={meal.idMeal} title={meal.strMeal} recipeImage={meal.strMealThumb} /> 
                             )}
@@ -104,6 +105,7 @@ class Listing extends React.Component {
                         : this.props.requestParams.pays !== null
                             ? <div className="cardContainer"> 
                                 <h2>Recherche par pays d'origine</h2>
+                                <br/>
                                 {this.state.responses.map((meal, index) =>
                                     <RecipeCard key={index} idRecipe={meal.idMeal} title={meal.strMeal} recipeImage={meal.strMealThumb} /> 
                             )}
@@ -112,6 +114,7 @@ class Listing extends React.Component {
                                 ? 
                                 <div className="cardContainer"> 
                                     <h2>Recherche par catégorie</h2>
+                                    <br/>
                                     {this.state.responses.map((meal, index) =>
                                         <RecipeCard key={index} idRecipe={meal.idMeal} title={meal.strMeal} recipeImage={meal.strMealThumb} /> 
                                 )}
@@ -119,7 +122,8 @@ class Listing extends React.Component {
                                 : this.props.requestParams.listName !== null
                                     ? <div>
                                         <h2>Recherche par première lettre</h2>
-                                        <ul>
+                                        <br/>
+                                        <ul className="alphabet">
                                             <a href="/recherche/listName/a">
                                                 <li> A /</li>
                                             </a>
@@ -209,6 +213,7 @@ class Listing extends React.Component {
                                         ?
                                         <div> 
                                             <h2>Liste des catégories de recettes</h2>
+                                            <br/>
                                             <ul> 
                                                 {this.state.responses.map((list, index) =>
                                                     <a href={`/recherche/categorie/${list.strCategory}`} key={index}><li> {list.strCategory} </li></a> 
@@ -218,6 +223,7 @@ class Listing extends React.Component {
                                         : this.props.requestParams.listPays !== false
                                             ? <ul> 
                                                 <h2>Liste des pays d'origines des recettes</h2>
+                                                <br/>
                                                 <li>
                                                     <img src={caflag} alt="" className="flag" onClick={() => this.research("Canadian")}/>
                                                     <img src={cnflag} alt="" className="flag" onClick={() => this.research("Chinese")}/>
