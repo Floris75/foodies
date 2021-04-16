@@ -15,13 +15,13 @@ function App() {
         <Route exact path="/" component={Homepage} />
         <Route path="/favoris" component={FavoriteComponent} />
         <Route path="/recipe/:id" render={(props) => <RecipeDetail {...props} />} />
-        <Route path="/recherche/name/:name" render={(props) => <ListingComponent recherche="name" {...props} />} />
-        <Route path="/recherche/categorie/:categorie" render={(props) => <ListingComponent recherche="categorie" {...props} />} />
-        <Route path="/recherche/ingredient/:ingredient" render={(props) => <ListingComponent recherche="ingredient" {...props} />} />
+        <Route path="/recherche/name/:name" render={(props) => <ListingComponent {...props} />} />
+        <Route path="/recherche/categorie/:categorie" render={(props) => <ListingComponent {...props} />} />
+        <Route path="/recherche/ingredient/:ingredient" render={(props) => <ListingComponent {...props} />} />
         <Route path="/recherche/pays/:pays" render={(props) => <ListingComponent {...props} />} />
-        <Route path="/recherche/listCategorie" render={(props) => <ListingComponent recherche="listCategorie" {...props} />} />
-        <Route path="/recherche/listPays" render={(props) => <ListingComponent recherche="listPays" {...props} />} />
-        <Route path="/recherche/listName/:listName" render={(props) => <ListingComponent recherche="listName" {...props} />} />
+        <Route path="/recherche/listCategorie" render={(props) => <ListingComponent {...props} />} />
+        <Route path="/recherche/listPays" render={(props) => <ListingComponent {...props} />} />
+        <Route path="/recherche/listName/:listName" render={(props) => <ListingComponent {...props} />} />
       </Switch>
       <Footer />
     </Router>

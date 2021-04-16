@@ -6,11 +6,7 @@ class Instruction extends React.Component{
         return (
             <>
                 <h4>Instructions</h4>
-                <ol>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                </ol>
+                <p> {this.props.Instructions} </p>
             </>
         )
     }
