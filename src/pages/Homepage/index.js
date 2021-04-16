@@ -9,21 +9,17 @@ class Homepage extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
-        data : [],
+            data : [],
      };
 
     }
 
     async componentDidMount() {
         for (let i=0; i < 9; i++ ) {
-          
-            const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/random.php`);
-        
+            const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/random.php`);      
             const randomRecipe = response.data.meals[0];
-
             this.setState({data : [...this.state.data, randomRecipe]})  
-        }
-        
+        }     
     }
     
 

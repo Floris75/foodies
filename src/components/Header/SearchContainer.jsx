@@ -9,7 +9,7 @@ class SearchContainer extends React.Component {
                     <img src={Header} alt="header"/>
                     <h1>FOODIES</h1>
                     <h3>La cuisine exquise</h3>
-                    <form action="/recherche">
+                    <form action="/recherche/listName/a">
                         <input type="search" name="recherche" placeholder="Rechercher"/>
                         <button>Recherche</button>
                     </form>
