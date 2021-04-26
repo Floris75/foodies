@@ -216,7 +216,9 @@ class Listing extends React.Component {
                                             <br/>
                                             <ul> 
                                                 {this.state.responses.map((list, index) =>
-                                                    <a href={`/recherche/categorie/${list.strCategory}`} key={index}><li> {list.strCategory} </li></a> 
+                                                    <a href={`/recherche/categorie/${list.strCategory}`} key={index}>
+                                                        <li> {list.strCategory} </li>
+                                                        </a> 
                                                     )}
                                             </ul>
                                         </div>
