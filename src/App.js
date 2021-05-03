@@ -19,8 +19,8 @@ function App() {
         <Route path="/recherche/categorie/:categorie" render={(props) => <ListingComponent {...props} />} />
         <Route path="/recherche/ingredient/:ingredient" render={(props) => <ListingComponent {...props} />} />
         <Route path="/recherche/pays/:pays" render={(props) => <ListingComponent {...props} />} />
-        <Route path="/recherche/listCategorie" render={(props) => <ListingComponent {...props} />} />
-        <Route path="/recherche/listPays" render={(props) => <ListingComponent {...props} />} />
+        <Route path="/recherche/listCategorie" render={(props) => <ListingComponent recherche="listCategorie" {...props} />} />
+        <Route path="/recherche/listPays" render={(props) => <ListingComponent recherche="listPays" {...props} />} />
         <Route path="/recherche/listName/:listName" render={(props) => <ListingComponent {...props} />} />
       </Switch>
       <Footer />
